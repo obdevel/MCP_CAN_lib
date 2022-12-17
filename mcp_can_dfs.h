@@ -251,7 +251,7 @@
 /*
  *  Speed 8M
  */
-#define MCP_8MHz_1000kBPS_CFG1 (0x00)  
+#define MCP_8MHz_1000kBPS_CFG1 (0x00)
 #define MCP_8MHz_1000kBPS_CFG2 (0xC0)  /* Enabled SAM bit     */
 #define MCP_8MHz_1000kBPS_CFG3 (0x80)  /* Sample point at 75% */
 
@@ -401,6 +401,12 @@
 #define MCP_20MHz_40kBPS_CFG2 (0xD3)
 #define MCP_20MHz_40kBPS_CFG3 (0x81)      /* Sample point at 80% */
 
+/*
+ *  speed 12M
+ */
+#define MCP_12MHz_125kBPS_CFG1 (0x41)
+#define MCP_12MHz_125kBPS_CFG2 (0xf1)
+#define MCP_12MHz_125kBPS_CFG3 (0x85)
 
 #define MCPDEBUG        (0)
 #define MCPDEBUG_TXBUF  (0)
@@ -445,6 +451,7 @@
 #define MCP_8MHZ     2
 #define MCP_CLOCK_SELECT 3
 #define MCP_CLKOUT_ENABLE 4
+#define MCP_12MHZ    5
 
 
 #define CAN_4K096BPS 0
